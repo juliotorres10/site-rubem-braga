@@ -22,8 +22,60 @@ time, mark, audio, video {
 
 body{
 	font-family: 'Roboto', sans-serif;
+	
 }
 
-h1, h2, h3, h4, h5, h6,{
+h1, h2, h3, h4, h5, h6{
 	font-family: 'Fredoka One', cursive;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(102, 130, 224);
+	padding: 10px;
+
+}
+
+img{
+	width: 100%;
+	
+}
+
+header h1{
+width: 25%;
+
+}
+
+header nav {
+width: 70%;
+
+}
+
+nav ul{
+	text-align: right;
+}
+
+nav ul li, nav ul li a {
+    display: inline-block;
+}
+nav ul li a{    
+	width: fit-content;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 8px;
+	text-decoration: none;
+	background-color: rgb(17, 17, 17);
+	color: rgb(240, 232, 232);
+	/* text-indent: 40px; */
+	line-height: 30px;
+}
+.ico-logo{
+	width: 40px;
+	margin: 0 10px 0 0;
+}
+
+nav ul li a:hover{
+	background-color: rgb(213, 216, 224);
+	color: #000;
 }

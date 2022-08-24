@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -20,16 +20,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-body{
+body {
 	font-family: 'Roboto', sans-serif;
-	
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Fredoka One', cursive;
 }
 
-header{
+header {
 	display: flex;
 	justify-content: space-between;
 	background-color: rgb(102, 130, 224);
@@ -37,45 +36,93 @@ header{
 
 }
 
-img{
+img {
 	width: 100%;
-	
+
 }
 
-header h1{
-width: 25%;
+header h1 {
+	width: 25%;
 
 }
 
 header nav {
-width: 70%;
+	width: 70%;
 
 }
 
-nav ul{
+ul {
+		list-style-type: none;
+}
+
+nav ul {
 	text-align: right;
 }
 
 nav ul li, nav ul li a {
-    display: inline-block;
+	display: inline-block;
 }
-nav ul li a{    
+
+nav ul li a {
 	width: fit-content;
-    height: 30px;
-    margin-bottom: 20px;
-    padding: 8px;
+	height: 30px;
+	margin-bottom: 15px;
+	padding: 20px;
 	text-decoration: none;
 	background-color: rgb(17, 17, 17);
 	color: rgb(240, 232, 232);
 	/* text-indent: 40px; */
 	line-height: 30px;
 }
-.ico-logo{
+
+main {
+	display: flex;
+	/* vh corresponde a porcentagem da tela do dispositivo 90vh e igual a 90% da altura da tela */
+	min-height: 80vh;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+aside {
+	width: 25%;
+	padding: 10px;
+	background-color: #7ceed9;
+}
+
+footer p{
+	text-align: center;
+
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+
+p{
+	margin: 10px;
+	font-size: 1.25rem;
+}
+
+.conteudo {
+	width: 70%;
+	padding: 10px;
+	background-color: rgb(162, 235, 235);
+
+}
+
+.ico-logo {
 	width: 40px;
 	margin: 0 10px 0 0;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
 	background-color: rgb(213, 216, 224);
 	color: #000;
 }

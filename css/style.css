@@ -22,17 +22,26 @@ time, mark, audio, video {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	margin-top: 115px;
+	background: rgb(19, 110, 163);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Fredoka One', cursive;
+	
 }
 
 header {
+	position: fixed;
+	top: 0;
+
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	padding: 10px 0 10px 0;
 	background-color: rgb(102, 130, 224);
-	padding: 10px;
+	box-shadow: 0px 5px 5px black;
+	
 
 }
 
@@ -88,7 +97,7 @@ main {
 aside {
 	width: 25%;
 	padding: 10px;
-	background-color: #7ceed9;
+	background-color: #bcece4;
 }
 
 footer p{
@@ -108,13 +117,17 @@ h2 {
 p{
 	margin: 10px;
 	font-size: 1.25rem;
+	color: aliceblue;
 }
 
-.conteudo {
-	width: 70%;
-	padding: 10px;
-	background-color: rgb(162, 235, 235);
 
+
+.box {
+	width: 46%;
+	margin-bottom: 12px;
+	padding: 10px;
+	background-color: rgb(72, 94, 167);
+	
 }
 
 .ico-logo {
@@ -122,7 +135,56 @@ p{
 	margin: 0 10px 0 0;
 }
 
+.conteudo, .conteudo-home {
+
+	width: 70%;
+	padding: 10px;
+	background-color: rgb(162, 235, 235);
+
+}
+
+
 nav ul li a:hover {
 	background-color: rgb(213, 216, 224);
 	color: #000;
+}
+.box figure{
+	height: 220px;
+	overflow: hidden;
+	border: #000 solid 1px;
+
+}
+.conteudo-home{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.modal{
+	position: fixed;
+	top: 20%;
+	right: 0;
+	width: 200px;
+	padding: 10px;
+	background-color: rgb(221, 245, 84);
+	border: #f90;
+}
+
+.modal .fechar{
+	position: absolute;
+	right: 10px;
+	top: 4px;
+	width: 20px;
+	padding: 2px;
+	background-color: #900;
+	color: rgb(241, 158, 158);
+	text-align: center;
+}
+
+#img-bibliografia{
+	margin-top: -240px;
+}
+
+#img-conto-como-comecei-a-escrever{
+	margin-top: -400px;
 }

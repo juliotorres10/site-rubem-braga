@@ -23,12 +23,17 @@ time, mark, audio, video {
 body {
 	font-family: 'Roboto', sans-serif;
 	margin-top: 115px;
-	background: rgb(19, 110, 163);
+	background: rgb(242, 242, 245);
+	background-image: url('../imagens/mancha.png');
+	background: size 50%;
+	;
+	background-repeat: no-repeat;
+	background-position: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Fredoka One', cursive;
-	
+
 }
 
 header {
@@ -39,9 +44,9 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0 10px 0;
-	background-color: rgb(102, 130, 224);
+	background-color: rgb(238, 184, 37);
 	box-shadow: 0px 5px 5px black;
-	
+
 
 }
 
@@ -61,7 +66,7 @@ header nav {
 }
 
 ul {
-		list-style-type: none;
+	list-style-type: none;
 }
 
 nav ul {
@@ -97,10 +102,10 @@ main {
 aside {
 	width: 25%;
 	padding: 10px;
-	background-color: #bcece4;
+	background-color: rgb(243 186 30);
 }
 
-footer p{
+footer p {
 	text-align: center;
 
 }
@@ -114,10 +119,10 @@ h2 {
 }
 
 
-p{
+p {
 	margin: 10px;
 	font-size: 1.25rem;
-	color: aliceblue;
+	color: rgb(18, 18, 19);
 }
 
 
@@ -126,8 +131,8 @@ p{
 	width: 46%;
 	margin-bottom: 12px;
 	padding: 10px;
-	background-color: rgb(72, 94, 167);
-	
+	background-color: rgb(243, 186, 30);
+
 }
 
 .ico-logo {
@@ -148,29 +153,31 @@ nav ul li a:hover {
 	background-color: rgb(213, 216, 224);
 	color: #000;
 }
-.box figure{
+
+.box figure {
 	height: 220px;
 	overflow: hidden;
 	border: #000 solid 1px;
 
 }
-.conteudo-home{
+
+.conteudo-home {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
-.modal{
+.modal {
 	position: fixed;
 	top: 20%;
-	right: 0;
+	right: 0px;
 	width: 200px;
 	padding: 10px;
 	background-color: rgb(221, 245, 84);
 	border: #f90;
 }
 
-.modal .fechar{
+.modal .fechar {
 	position: absolute;
 	right: 10px;
 	top: 4px;
@@ -180,11 +187,76 @@ nav ul li a:hover {
 	color: rgb(241, 158, 158);
 	text-align: center;
 }
+/* Nos desktops o menu hamburguer é oculto */
 
-#img-bibliografia{
+.menu-hamburguer{
+	display: none;
+}
+
+.menu-phone{
+	display: none;
+}
+
+#img-bibliografia {
 	margin-top: -240px;
 }
 
-#img-conto-como-comecei-a-escrever{
+#img-conto-como-comecei-a-escrever {
 	margin-top: -400px;
+}
+
+/* layout para Tablets e celulares */
+@media only screen and (max-width: 992px) {
+	main {
+		width: 100%;
+		flex-direction: column-reverse;
+		justify-content: left;
+	}
+
+	aside, .conteudo, .conteudo-home {
+		width: 90%;
+		margin: 0 auto;
+
+	}
+
+	nav {
+		display: none;
+	}
+
+	header h1 {
+		width: 60%;
+		font-size: 1rem;
+	}
+
+	.menu-hamburguer{
+		display: block;
+		width: 40px;
+		cursor: pointer;
+	}
+
+	.menu-phone{
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 50%;
+		padding: 10px;
+		background-color: #fff;
+		z-index: 1000;
+	}
+
+	.menu-phone ul{
+		padding: 0;
+		list-style: none;
+	}
+	.menu-phone ul li, .menu-phone ul li a{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		margin-bottom: 2px;
+		text-indent: 10px;
+	}
+	
 }

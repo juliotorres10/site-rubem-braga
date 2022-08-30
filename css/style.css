@@ -46,6 +46,7 @@ header {
 	padding: 10px 0 10px 0;
 	background-color: rgb(238, 184, 37);
 	box-shadow: 0px 5px 5px black;
+	z-index: 1000;
 
 
 }
@@ -144,7 +145,7 @@ p {
 
 	width: 70%;
 	padding: 10px;
-	background-color: rgb(162, 235, 235);
+	background-color: rgb(219 34 34);
 
 }
 
@@ -205,6 +206,10 @@ nav ul li a:hover {
 	margin-top: -400px;
 }
 
+#btFechar {
+	cursor: pointer;
+}
+
 /* layout para Tablets e celulares */
 @media only screen and (max-width: 992px) {
 	main {
@@ -235,14 +240,13 @@ nav ul li a:hover {
 	}
 
 	.menu-phone{
-		display: block;
 		position: fixed;
 		left: 0;
 		top: 0;
 		width: 50%;
 		padding: 10px;
 		background-color: #fff;
-		z-index: 1000;
+		
 	}
 
 	.menu-phone ul{

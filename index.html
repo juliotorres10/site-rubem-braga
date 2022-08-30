@@ -41,8 +41,8 @@
             </ul>
         </nav>
 
-        <nav class="menu-phone"> 
-            <div class="fechar">X</div>
+        <nav class="menu-phone" id="navPhone"> 
+            <div class="fechar" id="fecharPhone" >X</div>
 
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -55,16 +55,17 @@
         </nav>
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="menu-hamburguer">
+            class="menu-hamburguer" id="btHamburguer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
         </svg>
 
 
     </header>
 
     <!-- modal -->
-    <div class="modal">
-        <div class="fechar">X</div>
+    <div id="divModal" class="modal">
+        <div  id="btFechar" class="fechar">X</div>
         <h2>NÃO PERCA </h2>
         <h4>50% OFF NA FEIRA DO LIVRO</h4>
     </div>
@@ -143,7 +144,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2022 - Desenvolvido por Julio Cesar Torres</p>
+        <p>&copy; <span id="data"></span> - Desenvolvido por Julio Cesar Torres</p>
     </footer>
 
 

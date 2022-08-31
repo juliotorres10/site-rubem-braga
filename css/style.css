@@ -145,8 +145,12 @@ p {
 
 	width: 70%;
 	padding: 10px;
-	background-color: rgb(219 34 34);
+	background-color: rgb(238, 184, 37);
 
+}
+
+.conteudo-home{
+	background-color: #900;
 }
 
 
@@ -203,7 +207,11 @@ nav ul li a:hover {
 }
 
 #img-conto-como-comecei-a-escrever {
-	margin-top: -400px;
+	margin-top: -300px;
+}
+
+#img-conto-aula-de-ingles {
+	margin-top: 1200px;
 }
 
 #btFechar {
@@ -221,6 +229,7 @@ nav ul li a:hover {
 	aside, .conteudo, .conteudo-home {
 		width: 90%;
 		margin: 0 auto;
+		
 
 	}
 
@@ -231,6 +240,11 @@ nav ul li a:hover {
 	header h1 {
 		width: 60%;
 		font-size: 1rem;
+	}
+
+	img{
+		margin-top: 0;
+		height: 100%;
 	}
 
 	.menu-hamburguer{
@@ -261,6 +275,22 @@ nav ul li a:hover {
 		text-align: left;
 		margin-bottom: 2px;
 		text-indent: 10px;
+	}
+
+	.box{
+		width: 100%;
+	}
+
+	#img-bibliografia {
+		margin-top: 0;
+	}
+	
+	#img-conto-como-comecei-a-escrever {
+		margin-top: 0;
+	}
+	
+	#img-conto-aula-de-ingles {
+		margin-top: 0;
 	}
 	
 }
